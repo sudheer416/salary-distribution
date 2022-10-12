@@ -1,0 +1,273 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "AllEmployes",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "role",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Id_No",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "account_No",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "paid_status",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account_No",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ChangePosition",
+						"type": "uint256"
+					}
+				],
+				"name": "ChangePostion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account_No",
+						"type": "address"
+					}
+				],
+				"name": "CheckSalaryStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "role",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_Id_No",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_account_No",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_paidStatus",
+						"type": "bool"
+					}
+				],
+				"name": "Employe_Registration",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "GetEmployeeDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "role",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Id_No",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "account_No",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "paid_status",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account_No",
+						"type": "address"
+					}
+				],
+				"name": "RemoveEmployee",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "changePaidStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_ToEmployeAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sendingSalaries",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendingSalariesToEmployee",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"Employe_Registration(string,uint256,uint256,address,bool)": {
+					"notice": "0xb2309adF6FD227cd04fcAa5546E1375B2BC65Da0"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/salary.sol": "salary"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/salary.sol": {
+			"keccak256": "0x7e6ab8a5cf884e5a70cbe216ab9b3cced3ed988450baedc41291040d94b7ea5e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://719b81019fd638c690b96c603a362e03cc9301db12eb2ecd46f524544852e3bb",
+				"dweb:/ipfs/Qmf5tQFcVbzG489XLi8hZecEcVtVAy5hqLUocWYRUpY3bL"
+			]
+		}
+	},
+	"version": 1
+}
